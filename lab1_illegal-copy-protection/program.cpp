@@ -76,14 +76,14 @@ int main()
     switch (status)
     {
         case SUCCESS:
-            printf("Program can be run on this computer\n");
+            cout << "Program can be run on this computer" << endl;
             quadratic_equation();
-            break;
+            return SUCCESS;
         case FILE_ERROR:
-            printf("License file not found, program couldn't be run on this computer\n");
+            cout << "License file not found, program couldn't be run on this computer" << endl;
             return FILE_ERROR;
         case INSTALLATION_ERROR:
-            printf("Program is not installed on this computer\n");
+            cout << "Program is not installed on this computer" << endl;
             return INSTALLATION_ERROR;
     }
 }
