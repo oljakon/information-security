@@ -1,3 +1,5 @@
+all: program installer
+
 program:
 	g++ -o program license.cpp program.cpp
 
